@@ -16,4 +16,4 @@ This guide explains the Tideman ranked-choice voting problem deeply and visually
 
 ---
 
-✍️ I will fill each section as I learn and solve the problem.
+I will be breaking down the problem into chunks while I attempt to solve it, and explain it.

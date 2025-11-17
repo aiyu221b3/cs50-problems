@@ -115,9 +115,9 @@ int main(int argc, string argv[])
 
 ### Some more ideas.
 
-**1.** `argc` and `argv[]`: Let's start with the preconceived understanding that `argv[0]` is essentially just the name of the program. So, whatever candidate name we're adding starts from `argv[1]`. So, if `argc`, which is essentially just the number of command-line arguments we have here is lesser than **2**, we do not have any candidates. 
+**1.** `argc` and `argv[]`: Let's start with the preconceived understanding that `argv[0]` is essentially just the name of the program. So, whatever candidate name we're adding starts from `argv[1]`. So, if `argc`, which is essentially just the number of command-line arguments we have here is less than **2**, we do not have any candidates. 
 
-Point I'm trying to make is `argc` is the number of candidates (by names seperated by a single space when we enter them in terminal) plus 1, for the program name, and `argv` is the array storing these names+program name.
+Point I'm trying to make is `argc` is the number of candidates (by names separated by a single space when we enter them in terminal) plus 1, for the program name, and `argv` is the array storing these names+program name.
 
 ```c
  if (argc < 2)
@@ -176,9 +176,9 @@ for (int i = 0; i < voter_count; i++) // All voters.
 
 I've added a comment in it, which kind of clears up what's happening, but let's break it down a bit. There's two for loops, one runs for each voter, another runs for voter to voter. 
 
-The `i` loop is for voter to voter. It begins by initiliazing the `ranks[]` array over and over again so it can be reused by the proceeding voter. Then, it moves into the `j` loop which runs for each voter. It works simply by prompting the specific voter to enter their choices depending on the number of candidates in the election. Since in the CS50 exercise we had- **Alice**, **Bob**, and **Charlie**. That makes **3** positions here, for an example. Each voter can entire their choices in hierachy following the tideman system. Then, it moves to the `votes()` function and then the `record_preferences()` function. That, we shall discuss in the next file. Then, the `i` loop keeps iterating till before `voter_count`, since we start from index `0`.
+The `i` loop is for voter to voter. It begins by initializing the `ranks[]` array over and over again so it can be reused by the proceeding voter. Then, it moves into the `j` loop, which runs for each voter. It works simply by prompting the specific voter to enter their choices depending on the number of candidates in the election. Since in the CS50 exercise we had- **Alice**, **Bob**, and **Charlie**. That makes **3** positions here, for example. Each voter can enter their choices in hierarchy following the Tideman system. Then, it moves to the `votes()` function and then the `record_preferences()` function. That, we shall discuss in the next file. Then, the `i` loop keeps iterating till before `voter_count`, since we start from index `0`.
 
-> That concludes this document. Let's move to building the funcions!
+> That concludes this document. Let's move to building the functions!
 
 
 
